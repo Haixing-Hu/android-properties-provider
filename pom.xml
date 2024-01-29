@@ -11,33 +11,16 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>ltd.qubit</groupId>
-    <artifactId>pom-root</artifactId>
-    <version>2.0.0-SNAPSHOT</version>
+    <groupId>cn.njzhyl</groupId>
+    <artifactId>pom-android-root</artifactId>
+    <version>4.0.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>ltd.qubit.android</groupId>
   <artifactId>android-config-provider</artifactId>
   <version>0.1.0${build.suffix}</version>
   <packaging>jar</packaging>
   <name>Shared configuration through ContentProvider</name>
   <url>https://github.com/Haixing-Hu/android-config-provider</url>
-
-  <repositories>
-    <repository>
-      <id>google</id>
-      <name>Google Repository</name>
-      <url>https://maven.google.com/</url>
-      <layout>default</layout>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>always</updatePolicy>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
 
   <distributionManagement>
     <repository>
@@ -50,51 +33,20 @@
     </snapshotRepository>
   </distributionManagement>
 
-<!--  <build>-->
-<!--    <plugins>-->
-<!--      <plugin>-->
-<!--        <groupId>com.simpligility.maven.plugins</groupId>-->
-<!--        <artifactId>android-maven-plugin</artifactId>-->
-<!--        <version>4.6.0</version>-->
-<!--        <extensions>true</extensions>-->
-<!--        <configuration>-->
-<!--          <sdk>-->
-<!--            <platform>29</platform>-->
-<!--          </sdk>-->
-<!--        </configuration>-->
-<!--        <dependencies>-->
-<!--          <dependency>-->
-<!--            <groupId>javax.xml.bind</groupId>-->
-<!--            <artifactId>jaxb-api</artifactId>-->
-<!--            <version>2.3.1</version>-->
-<!--          </dependency>-->
-<!--          <dependency>-->
-<!--            <groupId>org.glassfish.jaxb</groupId>-->
-<!--            <artifactId>jaxb-runtime</artifactId>-->
-<!--            <version>2.3.1</version>-->
-<!--          </dependency>-->
-<!--        </dependencies>-->
-<!--      </plugin>-->
-<!--    </plugins>-->
-<!--  </build>-->
-
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>androidx.lifecycle</groupId>
-        <artifactId>lifecycle-common</artifactId>
-        <version>2.5.1</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.simpligility.maven.plugins</groupId>
+        <artifactId>android-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 
   <dependencies>
     <!-- Logging -->
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <type>jar</type>
-      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.github.tony19</groupId>
@@ -104,17 +56,28 @@
     </dependency>
 
     <!-- Android SDK -->
-    <dependency>
-      <groupId>com.google.android</groupId>
-      <artifactId>android</artifactId>
-      <version>4.1.1.4</version>
-      <scope>provided</scope>
-    </dependency>
+    <!-- Android SDK -->
     <dependency>
       <groupId>androidx.annotation</groupId>
       <artifactId>annotation</artifactId>
-      <version>1.7.1</version>
-      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.core</groupId>
+      <artifactId>core</artifactId>
+      <type>aar</type>
+    </dependency>
+    <dependency>
+      <groupId>androidx.appcompat</groupId>
+      <artifactId>appcompat</artifactId>
+      <type>aar</type>
+    </dependency>
+    <dependency>
+      <groupId>androidx.lifecycle</groupId>
+      <artifactId>lifecycle-common</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>android</groupId>
+      <artifactId>android</artifactId>
     </dependency>
   </dependencies>
 </project>
