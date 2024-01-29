@@ -1,12 +1,12 @@
 ////////////////////////////////////////////////////////////////////////////////
 //
-//    Copyright (c) 2022 - 2024.
-//    Haixing Hu, Qubit Co. Ltd.
+//    Copyright (c) 2017 - 2024.
+//    Nanjing Smart Medical Investment Operation Service Co. Ltd.
 //
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
-package ltd.qubit.android.commons.config;
+package cn.njzhyl.android.commons.config;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,14 +22,14 @@ import android.os.Build.VERSION_CODES;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 
-import static ltd.qubit.android.commons.config.ConfigProvider.PATH_CLEAR;
-import static ltd.qubit.android.commons.config.ConfigProvider.PATH_CONTAINS;
-import static ltd.qubit.android.commons.config.ConfigProvider.PATH_GET;
-import static ltd.qubit.android.commons.config.ConfigProvider.PATH_GET_ALL;
-import static ltd.qubit.android.commons.config.ConfigProvider.PATH_PUT;
-import static ltd.qubit.android.commons.config.ConfigProvider.PATH_PUT_ALL;
-import static ltd.qubit.android.commons.config.ConfigProvider.PATH_REMOVE;
-import static ltd.qubit.android.commons.config.ConfigProvider.PATH_SAVE;
+import static cn.njzhyl.android.commons.config.ConfigProvider.PATH_CLEAR;
+import static cn.njzhyl.android.commons.config.ConfigProvider.PATH_CONTAINS;
+import static cn.njzhyl.android.commons.config.ConfigProvider.PATH_GET;
+import static cn.njzhyl.android.commons.config.ConfigProvider.PATH_GET_ALL;
+import static cn.njzhyl.android.commons.config.ConfigProvider.PATH_PUT;
+import static cn.njzhyl.android.commons.config.ConfigProvider.PATH_PUT_ALL;
+import static cn.njzhyl.android.commons.config.ConfigProvider.PATH_REMOVE;
+import static cn.njzhyl.android.commons.config.ConfigProvider.PATH_SAVE;
 
 /**
  * The class of objects used to consume the shared configurations.
