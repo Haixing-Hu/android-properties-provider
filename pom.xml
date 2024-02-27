@@ -17,7 +17,7 @@
   </parent>
 
   <artifactId>android-config-provider</artifactId>
-  <version>0.1.0${build.suffix}</version>
+  <version>${android-config-provider.version}${build.suffix}</version>
   <packaging>jar</packaging>
   <name>Shared configuration through ContentProvider</name>
   <url>https://github.com/Haixing-Hu/android-config-provider</url>
@@ -61,23 +61,24 @@
       <groupId>androidx.annotation</groupId>
       <artifactId>annotation</artifactId>
     </dependency>
-    <dependency>
-      <groupId>androidx.core</groupId>
-      <artifactId>core</artifactId>
-      <type>aar</type>
-    </dependency>
-    <dependency>
-      <groupId>androidx.appcompat</groupId>
-      <artifactId>appcompat</artifactId>
-      <type>aar</type>
-    </dependency>
-    <dependency>
-      <groupId>androidx.lifecycle</groupId>
-      <artifactId>lifecycle-common</artifactId>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>androidx.core</groupId>-->
+<!--      <artifactId>core</artifactId>-->
+<!--      <type>aar</type>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>androidx.appcompat</groupId>-->
+<!--      <artifactId>appcompat</artifactId>-->
+<!--      <type>aar</type>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>androidx.lifecycle</groupId>-->
+<!--      <artifactId>lifecycle-common</artifactId>-->
+<!--    </dependency>-->
     <dependency>
       <groupId>android</groupId>
       <artifactId>android</artifactId>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 </project>
